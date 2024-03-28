@@ -1,0 +1,13 @@
+{
+  "name": "video-index",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  }
+}
