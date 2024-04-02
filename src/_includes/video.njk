@@ -6,13 +6,17 @@
         <link rel="stylesheet" href="css/style.css" />
         <title>{{ title }}</title>
     </head>
-    <body>
+    <body style="text-align:center">
     <!-- Import Mediaelement CSS -->
     <link href="https://cdn.jsdelivr.net/npm/mediaelement@latest/build/mediaelementplayer.min.css" rel="stylesheet">
     <!-- Import Mediaelement JS -->
     <script src="https://cdn.jsdelivr.net/npm/mediaelement@latest/build/mediaelement-and-player.min.js"></script>
 
-    <h2>{{ title }} - {{ fecha }}</h2>
+    <h2>{{ title }}</h2>
+    <h3>{{ fecha }}</h3>
+    <div class="marcador">
+        <img src="../../{{marcador}}"/>
+    </div>
     {% for video in videos %}
     <h3>{{video.title}}</h3>
     <div class="player">
@@ -21,8 +25,6 @@
         </video>
     </div>
     {% endfor %}
-
-
-
+    <div><a href="../../">Torna</a></div>
     </body>
 </html>
